@@ -1,0 +1,33 @@
+diff -ur xmms-shell-0.99.3.orig/ChangeLog xmms-shell-0.99.3shuffle_away/ChangeLog
+--- xmms-shell-0.99.3.orig/ChangeLog	2003-12-25 13:30:17.000000000 +0100
++++ xmms-shell-0.99.3shuffle_away/ChangeLog	2003-12-25 13:45:10.000000000 +0100
+@@ -1,3 +1,8 @@
++Thu Dec 25 12:39:50 UTC 2003 Kamil Strzelecki <esack@dharma.one.pl>
++
++  * disabled "some behavior for the NEXT and PREVIOUS commands when
++    shuffle-mode is on.". xmms --fwd/--rew seems to do this pretty well.
++
+ Wed Oct 23 00:11:03 UTC 2002  Logan Hanks  <logan@vt.edu>
+ 
+   * Fixed error in reimplementation of the LOAD command
+diff -ur xmms-shell-0.99.3.orig/src/playlist.cc xmms-shell-0.99.3shuffle_away/src/playlist.cc
+--- xmms-shell-0.99.3.orig/src/playlist.cc	2003-12-25 13:30:17.000000000 +0100
++++ xmms-shell-0.99.3shuffle_away/src/playlist.cc	2003-12-25 13:30:55.000000000 +0100
+@@ -60,7 +60,7 @@
+         Playlist playlist = session.playlist();
+         int pos = playlist.position();
+         int len = playlist.length();
+-
++/*
+ #if HAVE_XMMS_REMOTE_IS_SHUFFLE
+         if(session.shuffle()) {
+             if(jump < 0)
+@@ -70,7 +70,7 @@
+             usleep(100);
+             return playlist.position();
+         }
+-#endif
++#endif */
+         pos += jump;
+         if(pos < 1)
+             pos = len + pos + 1;
