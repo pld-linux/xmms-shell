@@ -7,6 +7,8 @@ License:	GPL v2
 Group:		Applications/Sound
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 # Source0-md5:	7c59ff584ae146282259fd6cdc8fe669
+Patch0:		%{name}-libtool.patch
+Patch1:		%{name}-playlist.patch
 URL:		http://www.loganh.com/xmms-shell/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -32,6 +34,8 @@ ma za zadanie wyeliminowanie tych utrudnieñ.
 
 %prep
 %setup -q
+%patch0 -p1
+%patch1 -p1
 
 %build
 rm -f missing
@@ -39,7 +43,7 @@ rm -f missing
 %{__aclocal}
 %{__autoconf}
 %{__automake}
-%configure
+%configure 
 
 %install
 rm -rf $RPM_BUILD_ROOT
