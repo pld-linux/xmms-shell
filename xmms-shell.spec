@@ -1,5 +1,5 @@
-Summary:	XMMS-Shell is a simple utility for controlling XMMS externally.
-#Summary(pl):
+Summary:	XMMS-Shell is a simple utility for controlling XMMS externally
+Summary(pl):	XMMS-Shell to proste narzêdzie do zewnêtrznej kontroli XMMS-a
 Name:		xmms-shell
 Version:	0.99.0
 Release:	1
@@ -20,10 +20,14 @@ XMMS-Shell is a simple utility for controlling XMMS externally.
 Although XMMS itself provides some similar functionality, XMMS lacks a
 few important command line options to allow one to perform certain
 tasks, such as volume control, easily manipulating a playlist, and
-more. XMMS-Shell is intended to make up for these deficiencies.
+more. XMMS-Shell is intended to make up for these defficiencies.
 
-#%description -l pl
-#
+%description -l pl
+XMMS-Shell to proste narzêdzie do zewnêtrznej kontroli XMMS-a. Pomimo
+¿e sam XMMS udostêpnia podobn± funkcjonalno¶æ, brakuje mu kilku
+wa¿nych poleceñ, pozwalaj±cych na wykonywanie niektórych zadañ, takich
+jak kontrola g³o¶no¶ci, ³atwe modyfikowanie playlisty itp. XMMS-Shell
+ma za zadanie wyeliminowanie tych utrudnieñ.
 
 %prep
 %setup -q
