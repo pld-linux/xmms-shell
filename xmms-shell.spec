@@ -2,13 +2,14 @@ Summary:	XMMS-Shell is a simple utility for controlling XMMS externally
 Summary(pl):	XMMS-Shell to proste narzêdzie do zewnêtrznej kontroli XMMS-a
 Name:		xmms-shell
 Version:	0.99.3
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Applications/Sound
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 # Source0-md5:	7c59ff584ae146282259fd6cdc8fe669
 Patch0:		%{name}-libtool.patch
 Patch1:		%{name}-playlist.patch
+Patch2:		%{name}-shuffle.patch
 URL:		http://www.loganh.com/xmms-shell/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -36,6 +37,7 @@ ma za zadanie wyeliminowanie tych utrudnieñ.
 %setup -q
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 
 %build
 rm -f missing
