@@ -35,7 +35,7 @@ ma za zadanie wyeliminowanie tych utrudnieñ.
 %build
 rm -f missing
 %{__libtoolize}
-aclocal
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure
