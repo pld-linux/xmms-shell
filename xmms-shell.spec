@@ -1,7 +1,7 @@
 Summary:	XMMS-Shell is a simple utility for controlling XMMS externally
 Summary(pl):	XMMS-Shell to proste narzêdzie do zewnêtrznej kontroli XMMS-a
 Name:		xmms-shell
-Version:	0.99.0
+Version:	0.99.3
 Release:	1
 License:	GPL v2
 Group:		Applications/Sound
@@ -51,3 +51,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README AUTHORS
 %attr(755,root,root) %{_bindir}/xmms-shell
+%{_mandir}/man?/
