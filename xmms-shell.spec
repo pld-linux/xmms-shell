@@ -1,11 +1,12 @@
 Summary:	XMMS-Shell is a simple utility for controlling XMMS externally
 Summary(pl):	XMMS-Shell to proste narzêdzie do zewnêtrznej kontroli XMMS-a
 Name:		xmms-shell
-Version:	0.99.0
+Version:	0.99.3
 Release:	1
 License:	GPL v2
 Group:		Applications/Sound
-Source0:	http://telia.dl.sourceforge.net/sourceforge/xmms-shell/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/sourceforge/xmms-shell/%{name}-%{version}.tar.gz
+# Source0-md5:	7c59ff584ae146282259fd6cdc8fe669
 URL:		http://www.loganh.com/xmms-shell/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -42,7 +43,8 @@ aclocal
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} DESTDIR=$RPM_BUILD_ROOT install
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
