@@ -20,7 +20,7 @@ XMMS-Shell is a simple utility for controlling XMMS externally.
 Although XMMS itself provides some similar functionality, XMMS lacks a
 few important command line options to allow one to perform certain
 tasks, such as volume control, easily manipulating a playlist, and
-more. XMMS-Shell is intended to make up for these defficiencies.
+more. XMMS-Shell is intended to make up for these deficiencies.
 
 %description -l pl
 XMMS-Shell to proste narzêdzie do zewnêtrznej kontroli XMMS-a. Pomimo
