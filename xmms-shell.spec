@@ -5,7 +5,7 @@ Version:	0.99.3
 Release:	1
 License:	GPL v2
 Group:		Applications/Sound
-Source0:	http://telia.dl.sourceforge.net/sourceforge/xmms-shell/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.gz
 # Source0-md5:	7c59ff584ae146282259fd6cdc8fe669
 URL:		http://www.loganh.com/xmms-shell/
 BuildRequires:	autoconf
